@@ -7,11 +7,14 @@
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod"
            review="https://review.cyanogenmod.com/" />
+  <remote  name="mb"
+           fetch="git://github.com/MeltedButter"
+           review="git://github.com/MeltedButter" />
   <default revision="refs/tags/android-6.0.0_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="platform_build" remote="mb" revision="marshmallow-release" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
