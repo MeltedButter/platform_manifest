@@ -7,11 +7,13 @@
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod"
            review="https://review.cyanogenmod.com/" />
+  <remote  name="mb"
+           fetch="git://github.com/MeltedButter" />
   <default revision="marshmallow-dev"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="platform_build" remote="mb" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
