@@ -14,7 +14,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform_build" remote="mb" groups="pdk" >
+  <project path="build" name="platform_build" remote="mb" groups="pdk" revision="refs/heads/android-4.4.4_r2.0.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -24,7 +24,7 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
-  <project path="dalvik" name="platform_dalvik" remote="mb" />
+  <project path="dalvik" name="platform_dalvik" remote="mb" revision="refs/heads/android-4.4.4_r2.0.1" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
@@ -46,7 +46,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
-  <project path="device/lge/hammerhead-kernel" name="device_lge_hammerhead-kernel" remote="mb" groups="device,hammerhead" />
+  <project path="device/lge/hammerhead-kernel" name="device_lge_hammerhead-kernel" remote="mb" groups="device,hammerhead" revision="refs/heads/kitkat-dev" />
   <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
@@ -150,7 +150,7 @@
   <project path="external/jsr305" name="platform/external/jsr305" />
   <project path="external/junit" name="platform/external/junit" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" />
-  <project path="external/koush/Superuser" name="external_koush_Superuser" remote="mb" />
+  <project path="external/koush/Superuser" name="external_koush_Superuser" remote="mb" revision="refs/heads/kitkat-dev" />
   <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-11.0" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" />
   <project path="external/libexif" name="platform/external/libexif" />
@@ -251,7 +251,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="mb" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="mb" revision="refs/heads/android-4.4.4_r2.0.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -266,7 +266,7 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" />
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
-  <project path="frameworks/opt/meltedbutter" name="platform_frameworks_opt_meltedbutter" remote="mb" />
+  <project path="frameworks/opt/meltedbutter" name="platform_frameworks_opt_meltedbutter" remote="mb" revision="refs/heads/kitkat-dev" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
@@ -329,7 +329,7 @@
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
-  <project path="packages/apps/MBSettings" name="platform_packages_apps_MBSettings" remote="mb" />
+  <project path="packages/apps/MBSettings" name="platform_packages_apps_MBSettings" remote="mb" revision="refs/heads/kitkat-dev" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
@@ -426,8 +426,8 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="platform_system_core" remote="mb" groups="pdk" />
-  <project path="system/extras" name="platform_system_extras" remote="mb" groups="pdk" />
+  <project path="system/core" name="platform_system_core" remote="mb" groups="pdk" revision="refs/heads/android-4.4.4_r2.0.1" />
+  <project path="system/extras" name="platform_system_extras" remote="mb" groups="pdk" revision="refs/heads/android-4.4.4_r2.0.1" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
